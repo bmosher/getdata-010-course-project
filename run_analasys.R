@@ -153,3 +153,6 @@ tidysummary <- summarize(tidysummary,
                          mean(fBodyBodyGyroJerkMag_mean),    
                          mean(fBodyBodyGyroJerkMag_std)
                )
+# output the data to a file
+write.table(tidydata, file="tidydata.txt", row.name=FALSE)
+write.table(tidysummary, file="tidysummary.txt", row.name=FALSE)
